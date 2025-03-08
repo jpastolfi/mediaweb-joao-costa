@@ -8,7 +8,7 @@ import user from '../../public/user.svg'
 
 export default function Sidebar() {
   return (
-    <div className='flex flex-col items-center justify-between h-screen w-1/12 bg-main-purple rounded-r-3xl py-6 absolute left-0'>
+    <div className='flex flex-col items-center justify-between h-screen w-1/12 bg-main-purple rounded-r-3xl py-6 absolute left-0 z-1'>
       <div className='flex items-center justify-center gap-2'>
         <img src={logo} className="w-9 h-7" alt="Company logo" />
         <img src={logo_arrow} className="w-6 h-6" alt="Expand arrow" />
