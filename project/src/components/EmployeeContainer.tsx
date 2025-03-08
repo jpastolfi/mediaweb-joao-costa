@@ -83,7 +83,7 @@ export default function EmployeeContainer() {
     }
   ];
   return (
-    <div className='flex flex-col items-center h-screen w-8/12 bg-light-blue rounded-r-3xl mx-auto absolute pl-44 py-13 pr-6 overflow-y-auto overflow-x-hidden'>
+    <div className='flex flex-col items-center h-screen w-8/12 bg-light-blue rounded-r-3xl mx-auto absolute pl-44 py-13 pr-6 overflow-y-auto overflow-x-hidden no-scrollbar'>
       <div className='flex flex-col items-center justify-between w-full'>
         <EmployeeHeader />  
         <EmployeeSearchbar />
