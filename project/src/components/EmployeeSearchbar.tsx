@@ -10,8 +10,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import chevron_down from "../../public/chevron-down.svg";
-import search from "../../public/search.svg";
+import chevron_down from "../assets/chevron-down.svg";
+import search from "../assets/search.svg";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";

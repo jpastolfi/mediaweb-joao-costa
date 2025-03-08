@@ -1,10 +1,10 @@
-import config from '../../public/config.svg'
-import heart from '../../public/heart.svg'
-import home from '../../public/home.svg'
-import logo_arrow from '../../public/logo-arrow.svg'
-import logo from '../../public/logo.svg'
-import pie_chart from '../../public/pie-chart.svg'
-import user from '../../public/user.svg'
+import config from '../assets/config.svg'
+import heart from '../assets/heart.svg'
+import home from '../assets/home.svg'
+import logo_arrow from '../assets/logo-arrow.svg'
+import logo from '../assets/logo.svg'
+import pie_chart from '../assets/pie-chart.svg'
+import user from '../assets/user.svg'
 
 export default function Sidebar() {
   return (
