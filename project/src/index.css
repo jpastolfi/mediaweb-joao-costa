@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+@theme {
+  --color-main-purple: #7030A0;
+  --color-bg-light-blue: #E8F1F9;
+  --color-card-dark-blue: #1A79CB;
+  --color-card-light-blue: #F4FAFF;
+}
