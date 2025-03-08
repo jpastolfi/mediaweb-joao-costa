@@ -9,6 +9,9 @@
   --color-light-blue: #E8F1F9;
   --color-card-dark-blue: #1A79CB;
   --color-card-light-blue: #F4FAFF;
+  --color-active-text: #2A843C;
+  --color-active-bg: #EBF7ED;
+  
 }
 
 :root {
