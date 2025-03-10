@@ -28,14 +28,6 @@ const events = [
     active: false,
     activity: "Health"
   },
-  {
-    title: "Meditation",
-    time: "5:00PM - 6:00PM",
-    coach: "Tim Bjorvick",
-    participants: [],
-    active: false,
-    activity: "Meditation"
-  },
 ];
 
 export default function Dashboard() {
@@ -44,7 +36,7 @@ export default function Dashboard() {
       <ProfileHeader />
       <StatsSection />
       <CalendarSection />
-      <div className="p-0">
+      <div className="flex flex-col gap-y-2">
         {events.map((event, index) => (
           <EventCard
             key={index}
@@ -56,6 +48,17 @@ export default function Dashboard() {
             activity={event.activity}
           />
         ))}
+      </div>
+      <div className="flex flex-col gap-4 items-start">
+        <p className="text-sm font-bold">Post workout sessions</p>
+        <EventCard
+          title="Meditation"
+          time="5:00PM - 6:00PM"
+          coach="Tim Bjorvick"
+          participants={[]}
+          active={false}
+          activity="Meditation"
+        />
       </div>
     </div>
   );

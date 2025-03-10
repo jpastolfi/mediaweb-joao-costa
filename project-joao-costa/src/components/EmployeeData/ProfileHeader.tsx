@@ -3,7 +3,7 @@ import padlock_open from "../../assets/padlock-open.svg";
 
 export function ProfileHeader() {
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between w-10/12">
       <div className="flex items-center gap-4">
         <img
           src={bernard}
