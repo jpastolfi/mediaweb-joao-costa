@@ -1,6 +1,7 @@
 import EmployeeHeader from "./EmployeeContainer/EmployeeHeader";
 import EmployeeList, { Employee } from "./EmployeeContainer/EmployeeList";
 import EmployeeSearchbar from "./EmployeeContainer/EmployeeSearchbar";
+import { Pagination, PaginationContent, PaginationEllipsis, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "./ui/pagination";
 
 export default function EmployeeContainer() {
   const employees: Employee[] = [
@@ -91,8 +92,38 @@ export default function EmployeeContainer() {
       <div className='w-full grow-1'>
         <EmployeeList employees={employees} />
       </div>
-      <div className="contain-content">
+      <div className="contain-content flex items-center justify-between w-full mt-4">
         <p className="text-sm text-text-gray">1 to 4 of 65 records</p>
+        <div className="text-text-gray">
+        <Pagination>
+          <PaginationContent>
+            <PaginationItem>
+              <PaginationPrevious href="#" />
+            </PaginationItem>
+            <PaginationItem className="border-1 border-main-purple rounded-full">
+              <PaginationLink href="#">1</PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#">2</PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#">3</PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#">4</PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationLink href="#">5</PaginationLink>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationEllipsis />
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationNext href="#" />
+            </PaginationItem>
+          </PaginationContent>
+          </Pagination>
+        </div>
       </div>
     </div>
   )
