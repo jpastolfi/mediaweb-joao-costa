@@ -7,9 +7,12 @@ Ao receber o desafio fiquei em dúvida se deveria tentar resolver o desafio usan
 
 Após muita pesquisa, testar diversos frameworks (Next, Astro, Alpine, etc) e não conseguir solucionar a questão do acesso à aplicação através do arquivo `index.html`, encontrei um plugin para Vite chamado [vite-plugin-singlefile](https://www.npmjs.com/package/vite-plugin-singlefile) que permite o inline de todo o código JS e CSS dentro de um único arquivo HTML, permitindo que a aplicação inteira possa ser acessada através do `index.html`.
 
+Para facilitar a leitura e a manutenção do código, criei utility classes de CSS para criar classes reutilizáveis e não ter que repetir muito código de estilização.
+
+
 ## Frameworks e bibloitecas utilizados
+- Vite
 - React
 - Tailwind
 - Shadcn
-- Lucide
 
