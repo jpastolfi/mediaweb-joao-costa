@@ -8,7 +8,7 @@ export function ProfileHeader() {
         <img
           src={bernard}
           alt="Profile"
-          className="w-12 h-12 rounded-full"
+          className="w-12 h-12 rounded-full object-cover"
         />
         <div className="flex flex-col items-start">
           <h2 className="text-lg font-semibold">Isaac Williams</h2>

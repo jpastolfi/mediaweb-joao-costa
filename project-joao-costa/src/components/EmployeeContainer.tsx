@@ -85,7 +85,7 @@ export default function EmployeeContainer() {
   ];
   return (
     <div className='flex flex-col items-center h-screen w-9/12 bg-light-blue rounded-r-3xl mx-auto absolute pl-44 py-13 pr-6 overflow-y-auto overflow-x-hidden no-scrollbar'>
-      <div className='flex flex-col items-center justify-between w-full'>
+      <div className='flex flex-col w-full pr-12'>
         <EmployeeHeader />  
         <EmployeeSearchbar />
       </div>

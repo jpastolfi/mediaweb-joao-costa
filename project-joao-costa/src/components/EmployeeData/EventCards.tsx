@@ -20,7 +20,7 @@ export function EventCard({ title, time, coach, participants, active, activity }
               key={index}
               src={participant}
               alt="Participant"
-              className="size-8 rounded-full border-2 border-white -ml-2" 
+              className="size-8 rounded-full border-2 border-white -ml-2 object-cover" 
               style={{ zIndex: participants.length - index }}
             />
           ))}

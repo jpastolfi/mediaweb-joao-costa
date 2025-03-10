@@ -1,4 +1,5 @@
 
+import arrowRight from "../assets/arrow-right.svg";
 import bernard from "../assets/bernard.png";
 import bessie from "../assets/bessie.png";
 import colleen from "../assets/colleen.png";
@@ -6,7 +7,6 @@ import { CalendarSection } from "./EmployeeData/CalendarSection";
 import { EventCard } from "./EmployeeData/EventCards";
 import { ProfileHeader } from "./EmployeeData/ProfileHeader";
 import { StatsSection } from "./EmployeeData/StatsSection";
-
 const events = [
   {
     title: "Match against Team B",
@@ -34,6 +34,9 @@ export default function Dashboard() {
   return (
     <div className="w-3/12 h-screen absolute right-0 px-14 py-10 flex flex-col gap-5 bg-white">
       <ProfileHeader />
+      <div className="absolute top-15 right-120 flex items-center justify-center w-12 h-24 rounded-l-4xl bg-white">
+          <img src={arrowRight} alt="arrow-right" className="w-4 h-4" />
+      </div>
       <StatsSection />
       <CalendarSection />
       <div className="flex flex-col gap-y-2">

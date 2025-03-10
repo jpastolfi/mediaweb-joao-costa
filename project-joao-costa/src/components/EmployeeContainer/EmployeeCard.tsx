@@ -45,7 +45,7 @@ export default function EmployeeCard({employee}: {employee: Employee}) {
             <AccordionTrigger className="p-4 hover:no-underline w-full [&[data-state=open]>div>div:last-child>svg]:rotate-180">
               <div className="flex items-center justify-between w-full">
                 <div className="flex items-center w-full gap-4">
-                    <img className="size-10 rounded-full" src={image} alt={`${employee.name}'s profile`} />
+                    <img className="size-10 rounded-full object-cover" src={image} alt={`${employee.name}'s profile`} />
                   <div className="flex flex-col sm:flex-row sm:items-center sm:gap-8 w-full justify-between">
                     <span className="w-1/3 font-medium">{employee.name}</span>
                     <span className="w-1/3 text-gray-600">{employee.location}</span>
