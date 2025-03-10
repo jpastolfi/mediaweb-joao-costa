@@ -1,3 +1,4 @@
+import { useState } from "react";
 import bernard from "../../assets/bernard.png";
 import bessie from "../../assets/bessie.png";
 import colleen from "../../assets/colleen.png";
@@ -36,12 +37,12 @@ export default function EmployeeCard({employee}: {employee: Employee}) {
     default:
       image = "";
   }
-
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="w-full">
-      <Accordion type="single" collapsible className="border rounded-lg overflow-hidden w-full">
+      <Accordion type="single" collapsible className="border rounded-lg overflow-hidden w-full" onValueChange={() => setIsOpen(!isOpen)}>
         <AccordionItem value="item-1" className="border-0">
-          <div className="bg-white w-full">
+          <div className={`w-full ${isOpen ? 'bg-gray-200' : 'bg-white'}`}>
             <AccordionTrigger className="p-4 hover:no-underline w-full [&[data-state=open]>div>div:last-child>svg]:rotate-180">
               <div className="flex items-center justify-between w-full">
                 <div className="flex items-center w-full gap-4">
@@ -53,7 +54,7 @@ export default function EmployeeCard({employee}: {employee: Employee}) {
                   </div>
                 </div>
                 <div className="flex items-center gap-2 flex-shrink-0">
-                  <span className="bg-active-bg text-active-text text-xs px-3 py-1 rounded-full">{employee.status}</span>
+                  <span className={`${isOpen ? 'bg-active-text text-white' : 'bg-active-bg text-active-text'} text-xs px-3 py-1 rounded-full`}>{employee.status}</span>
                 </div>
               </div>
             </AccordionTrigger>

@@ -84,22 +84,28 @@ export default function EmployeeSearchbar() {
       </Popover>   
 
       </div>
-      <div className="flex items-center justify-between gap-2 w-full border-0 mb-5 pr-8">
-        <div className="flex items-center gap-2 mr-22">
-          <p>Name</p>
-        <img className="size-4" src={scrollbar_transparent} alt="search" />
+      <div className="flex items-center justify-between w-full mb-4">
+
+        <div className="sort-item w-full justify-around">
+          <div className="sort-item mr-22">
+            <p>Name</p>
+            <img className="size-4" src={scrollbar_transparent} alt="search" />
+          </div>
+          <div className="sort-item">
+            <p>State</p>
+            <img className="size-4" src={scrollbar_black} alt="search" />
+          </div>
         </div>
-        <div className="flex items-center gap-2">
-          <p>State</p>
-        <img className="size-4" src={scrollbar_black} alt="search" />
-        </div>
-        <div className="flex items-center gap-2">
-          <p>City</p>
-        <img className="size-4" src={scrollbar_black} alt="search" />
-        </div>
-        <div className="flex items-center gap-2">
-          <p>Actions</p>
-        <img className="size-4" src={scrollbar_black} alt="search" />
+
+        <div className="flex items-center w-full justify-end gap-50">
+          <div className="sort-item">
+            <p>City</p>
+            <img className="size-4" src={scrollbar_black} alt="search" />
+          </div>
+          <div className="sort-item">
+            <p>Actions</p>
+            <img className="size-4" src={scrollbar_black} alt="search" />
+          </div>
         </div>
       </div>
     </div>

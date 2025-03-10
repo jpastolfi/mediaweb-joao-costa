@@ -34,7 +34,7 @@ export default function Dashboard() {
   return (
     <div className="w-3/12 h-screen absolute right-0 px-14 py-10 flex flex-col gap-5 bg-white">
       <ProfileHeader />
-      <div className="absolute top-15 right-120 flex items-center justify-center w-12 h-24 rounded-l-4xl bg-white">
+      <div className="absolute flex items-center justify-center w-12 h-24 rounded-l-4xl bg-white -ml-22">
           <img src={arrowRight} alt="arrow-right" className="w-4 h-4" />
       </div>
       <StatsSection />

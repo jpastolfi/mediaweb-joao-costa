@@ -20,7 +20,7 @@
   --color-card-text-dark-blue: #0E426F;
   --color-text-blue-underline: #009DDE;
 }
-/* Card images -> text-light-blue  */
+
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
@@ -36,6 +36,13 @@
     background-color: red;
     color: #2A843C;
   }
+
+  .sort-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Assuming a gap of 2 units, adjust as necessary */
+  }
+
 }
 
 :root {
