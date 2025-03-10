@@ -53,7 +53,7 @@ export default function Dashboard() {
         ))}
       </div>
       <div className="flex flex-col gap-4 items-start">
-        <p className="text-sm font-bold">Post workout sessions</p>
+        <h3 className="text-sm text-card-text-dark-blue font-semibold">Post workout sessions</h3>
         <EventCard
           title="Meditation"
           time="5:00PM - 6:00PM"
