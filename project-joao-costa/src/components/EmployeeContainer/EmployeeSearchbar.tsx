@@ -10,13 +10,13 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import chevron_down from "../assets/chevron-down.svg";
-import scrollbar_black from "../assets/scrollbar-black.svg";
-import scrollbar_transparent from "../assets/scrollbar-transparent.svg";
-import search from "../assets/search.svg";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { Label } from "./ui/label";
+import chevron_down from "../../assets/chevron-down.svg";
+import scrollbar_black from "../../assets/scrollbar-black.svg";
+import scrollbar_transparent from "../../assets/scrollbar-transparent.svg";
+import search from "../../assets/search.svg";
+import { Button } from "../ui/button";
+import { Input } from "../ui/input";
+import { Label } from "../ui/label";
 
 export default function EmployeeSearchbar() {
   return (

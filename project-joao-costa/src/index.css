@@ -11,8 +11,16 @@
   --color-card-light-blue: #F4FAFF;
   --color-active-text: #2A843C;
   --color-active-bg: #EBF7ED;
+  --color-text-blue: #5FA1DA;
+  --color-text-light-blue: #A3C9EA;
+  --color-text-dark-blue: #1666AC;
+  --color-text-muted: #DEE2E6;
+  --color-card-separator: #93B0C8;
+  --color-text-gray: #6A7178;
+  --color-card-text-dark-blue: #0E426F;
+  --color-text-blue-underline: #009DDE;
 }
-
+/* Card images -> text-light-blue  */
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
@@ -22,7 +30,12 @@
   .no-scrollbar {
       -ms-overflow-style: none;  /* IE and Edge */
       scrollbar-width: none;  /* Firefox */
-}
+  }
+
+  .test {
+    background-color: red;
+    color: #2A843C;
+  }
 }
 
 :root {

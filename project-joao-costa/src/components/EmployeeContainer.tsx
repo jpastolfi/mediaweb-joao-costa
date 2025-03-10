@@ -1,6 +1,6 @@
-import EmployeeHeader from "./EmployeeHeader";
-import EmployeeList, { Employee } from "./EmployeeList";
-import EmployeeSearchbar from "./EmployeeSearchbar";
+import EmployeeHeader from "./EmployeeContainer/EmployeeHeader";
+import EmployeeList, { Employee } from "./EmployeeContainer/EmployeeList";
+import EmployeeSearchbar from "./EmployeeContainer/EmployeeSearchbar";
 
 export default function EmployeeContainer() {
   const employees: Employee[] = [
@@ -83,13 +83,16 @@ export default function EmployeeContainer() {
     }
   ];
   return (
-    <div className='flex flex-col items-center h-screen w-8/12 bg-light-blue rounded-r-3xl mx-auto absolute pl-44 py-13 pr-6 overflow-y-auto overflow-x-hidden no-scrollbar'>
+    <div className='flex flex-col items-center h-screen w-9/12 bg-light-blue rounded-r-3xl mx-auto absolute pl-44 py-13 pr-6 overflow-y-auto overflow-x-hidden no-scrollbar'>
       <div className='flex flex-col items-center justify-between w-full'>
         <EmployeeHeader />  
         <EmployeeSearchbar />
       </div>
       <div className='w-full grow-1'>
         <EmployeeList employees={employees} />
+      </div>
+      <div className="contain-content">
+        <p className="text-sm text-text-gray">1 to 4 of 65 records</p>
       </div>
     </div>
   )

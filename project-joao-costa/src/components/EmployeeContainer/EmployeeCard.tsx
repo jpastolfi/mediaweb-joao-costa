@@ -1,15 +1,14 @@
-import bernard from "../assets/bernard.png";
-import bessie from "../assets/bessie.png";
-import colleen from "../assets/colleen.png";
-import email from "../assets/email.svg";
-import floyd from "../assets/floyd.png";
-import francisco from "../assets/francisco.png";
-import lee from "../assets/lee.png";
-import lily from "../assets/lily.png";
-import phone from "../assets/phone.svg";
+import bernard from "../../assets/bernard.png";
+import bessie from "../../assets/bessie.png";
+import colleen from "../../assets/colleen.png";
+import email from "../../assets/email.svg";
+import floyd from "../../assets/floyd.png";
+import francisco from "../../assets/francisco.png";
+import lee from "../../assets/lee.png";
+import lily from "../../assets/lily.png";
+import phone from "../../assets/phone.svg";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "../ui/accordion";
 import { Employee } from "./EmployeeList";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
-
 export default function EmployeeCard({employee}: {employee: Employee}) {
   let image;
   switch (employee.name) {
