@@ -42,26 +42,28 @@ export default function EmployeeCard({employee}: {employee: Employee}) {
     <div className="w-full">
       <Accordion type="single" collapsible className="border rounded-lg overflow-hidden w-full" onValueChange={() => setIsOpen(!isOpen)}>
         <AccordionItem value="item-1" className="border-0">
-          <div className={`w-full ${isOpen ? 'bg-gray-200' : 'bg-white'}`}>
-            <AccordionTrigger className="p-4 hover:no-underline w-full [&[data-state=open]>div>div:last-child>svg]:rotate-180">
-              <div className="flex items-center justify-between w-full">
+            <AccordionTrigger className={`p-4 hover:no-underline w-full ${isOpen ? 'bg-gray-200' : 'bg-white'} flex items-center justify-between`}>  
+              
                 <div className="flex items-center w-full gap-4">
+               
                     <img className="size-10 rounded-full object-cover" src={image} alt={`${employee.name}'s profile`} />
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:gap-8 w-full justify-between">
-                    <span className="w-1/3 font-medium">{employee.name}</span>
-                    <span className="w-1/3 text-gray-600">{employee.location}</span>
-                    <span className="w-1/3 text-gray-600">{employee.state}</span>
+                
+                  <div className="flex items-center gap-8 w-full justify-between">
+                    <span className="employee-card-text">{employee.name}</span>
+                    <span className="employee-card-text">{employee.location}</span>
+                    <span className="employee-card-text">{employee.state}</span>
                   </div>
+               
                 </div>
+                
                 <div className="flex items-center gap-2 flex-shrink-0">
                   <span className={`${isOpen ? 'bg-active-text text-white' : 'bg-active-bg text-active-text'} text-xs px-3 py-1 rounded-full`}>{employee.status}</span>
                 </div>
-              </div>
+
             </AccordionTrigger>
-          </div>
 
           <AccordionContent className="pt-0 w-full bg-white">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4 w-full">
+            <div className="grid grid-cols-3 gap-6 p-4 w-full">
               <div className="text-left w-full ">
                 <h3 className="text-purple-700 font-medium mb-4">Personal Detail</h3>
                 <div className="space-y-3">
