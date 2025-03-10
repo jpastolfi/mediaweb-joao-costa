@@ -58,6 +58,7 @@
     width: 33.333%;
     color: var(--color-card-text-gray);
     font-size: 0.875rem;
+    white-space: nowrap;
   }
 }
 

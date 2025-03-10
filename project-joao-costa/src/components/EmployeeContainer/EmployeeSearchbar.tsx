@@ -87,7 +87,7 @@ export default function EmployeeSearchbar() {
       <div className="flex items-center justify-between w-full mb-4">
 
         <div className="sort-item w-full justify-around">
-          <div className="sort-item mr-22">
+          <div className="sort-item">
             <p>Name</p>
             <img className="size-4" src={scrollbar_transparent} alt="search" />
           </div>
@@ -97,8 +97,8 @@ export default function EmployeeSearchbar() {
           </div>
         </div>
 
-        <div className="flex items-center w-full justify-end gap-50">
-          <div className="sort-item">
+        <div className="flex items-center w-full justify-between">
+          <div className="pl-5 sort-item">
             <p>City</p>
             <img className="size-4" src={scrollbar_black} alt="search" />
           </div>

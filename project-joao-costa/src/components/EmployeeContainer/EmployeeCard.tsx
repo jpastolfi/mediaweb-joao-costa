@@ -43,22 +43,20 @@ export default function EmployeeCard({employee}: {employee: Employee}) {
       <Accordion type="single" collapsible className="border rounded-lg overflow-hidden w-full" onValueChange={() => setIsOpen(!isOpen)}>
         <AccordionItem value="item-1" className="border-0">
             <AccordionTrigger className={`p-4 hover:no-underline w-full ${isOpen ? 'bg-gray-200' : 'bg-white'} flex items-center justify-between`}>  
-              
-                <div className="flex items-center w-full gap-4">
-               
-                    <img className="size-10 rounded-full object-cover" src={image} alt={`${employee.name}'s profile`} />
-                
-                  <div className="flex items-center gap-8 w-full justify-between">
-                    <span className="employee-card-text">{employee.name}</span>
-                    <span className="employee-card-text">{employee.location}</span>
-                    <span className="employee-card-text">{employee.state}</span>
-                  </div>
-               
+
+              <div className="flex items-center gap-2 w-1/2 justify-between">
+                <div className="flex items-center gap-2">
+                  <img className="size-10 rounded-full object-cover" src={image} alt={`${employee.name}'s profile`} />
+                  <span className="employee-card-text">{employee.name}</span>
                 </div>
+                <span className="employee-card-text">{employee.location}</span>
+              </div>
                 
-                <div className="flex items-center gap-2 flex-shrink-0">
-                  <span className={`${isOpen ? 'bg-active-text text-white' : 'bg-active-bg text-active-text'} text-xs px-3 py-1 rounded-full`}>{employee.status}</span>
-                </div>
+              <div className="flex items-center gap-2 w-1/2 justify-between">
+                <span className="employee-card-text">{employee.state}</span>
+                <span className={`${isOpen ? 'bg-active-text text-white' : 'bg-active-bg text-active-text'} text-xs px-3 py-1 rounded-full`}>{employee.status}</span>
+              </div>
+                
 
             </AccordionTrigger>
 
