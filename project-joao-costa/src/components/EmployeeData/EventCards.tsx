@@ -6,7 +6,7 @@ import { Separator } from "../ui/separator";
 
 export function EventCard({ title, time, coach, participants, active, activity }: { title: string, time: string, coach: string, participants: string[], active: boolean, activity: string }) {
   return (
-    <div className={`${active ? "bg-card-dark-blue text-white" : "bg-light-blue text-card-text-dark-blue"} p-4 rounded-lg relative flex flex-col items-start w-10/12`}>
+    <div className={`${active ? "bg-card-dark-blue text-white" : "bg-light-blue text-card-text-dark-blue"} p-4 rounded-lg relative flex flex-col items-start w-10/12 contain-content`}>
       <h4 className="text-sm font-semibold py-1 z-999">{title}</h4>
       <p className="text-sm pb-2 z-999">{time}</p>
       <p className="text-sm pb-2 z-999">{(activity === 'Health' ? '' : 'Coach: ') + coach}</p>
